@@ -33,7 +33,7 @@ export function HeroSection() {
           </nav>
         </header>
 
-        <main className="mt-8 max-w-xl sm:mt-auto sm:pb-4">
+        <main className="mt-5 max-w-xl pb-44 sm:mt-10 md:mt-14 lg:mt-16">
           <p className="mb-3 inline-flex rounded-full border border-white/25 bg-black/20 px-3 py-1 text-xs font-medium">
             Private Coach in UAE - Dubai
           </p>
@@ -42,34 +42,35 @@ export function HeroSection() {
           </h1>
           <p
             id="about"
-            className="mt-4 max-w-lg text-sm leading-7 text-white/90 sm:text-base"
+            className="mt-12 max-w-lg text-base font-semibold leading-7 text-white/95 sm:text-lg"
           >
             One-on-one sessions that improve technique, footwork, and match
             confidence. Fast progress plans tailored to your level and schedule.
           </p>
 
-          <div
-            id="contact"
-            className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4"
-          >
-            <ActionButton label="WhatsApp Booking" href={WHATSAPP_LINK} />
-            <ActionButton label="Call Now" href={CALL_LINK} variant="secondary" />
-          </div>
-
-          <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
-            {highlights.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-2xl border border-white/55 px-2 py-2 text-white sm:px-4"
-              >
-                <h3 className="text-xs font-semibold sm:text-base">{item.title}</h3>
-                <p className="mt-0.5 text-[10px] text-white/90 sm:text-sm">
-                  {item.subtitle}
-                </p>
-              </article>
-            ))}
-          </div>
         </main>
+
+        <div className="pointer-events-none absolute inset-x-4 bottom-28 z-20 grid grid-cols-3 gap-2 sm:inset-x-8 sm:bottom-28 sm:gap-3">
+          {highlights.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-2xl border border-white/55 px-2 py-2 text-center text-white sm:px-3"
+            >
+              <h3 className="text-xs font-semibold sm:text-sm">{item.title}</h3>
+              <p className="mt-0.5 text-[10px] leading-snug text-white/90 sm:text-xs">
+                {item.subtitle}
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <div
+          id="contact"
+          className="absolute inset-x-4 bottom-4 z-30 grid grid-cols-1 gap-3 sm:inset-x-8 sm:bottom-6 sm:grid-cols-2"
+        >
+          <ActionButton label="WhatsApp Booking" href={WHATSAPP_LINK} />
+          <ActionButton label="Call Now" href={CALL_LINK} variant="secondary" />
+        </div>
       </div>
     </section>
   );
