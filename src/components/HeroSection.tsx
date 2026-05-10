@@ -33,11 +33,11 @@ export function HeroSection() {
           </nav>
         </header>
 
-        <main className="mt-5 max-w-xl pb-44 sm:mt-10 md:mt-14 lg:mt-16">
+        <main className="mt-5 max-w-xl pb-44 sm:mt-10 md:mt-14 md:max-w-3xl lg:mt-16">
           <p className="mb-3 inline-flex rounded-full border border-white/25 bg-black/20 px-3 py-1 text-xs font-medium">
             Private Coach in UAE - Dubai
           </p>
-          <h1 className="text-[1.7rem] font-extrabold leading-tight tracking-tight text-shine-green sm:text-5xl sm:whitespace-nowrap">
+          <h1 className="text-[1.7rem] font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:whitespace-nowrap">
             Elite Private Tennis Coach
           </h1>
           <p
@@ -50,7 +50,7 @@ export function HeroSection() {
 
         </main>
 
-        <div className="pointer-events-none absolute inset-x-4 bottom-28 z-20 grid grid-cols-3 gap-2 sm:inset-x-8 sm:mx-auto sm:max-w-xl sm:gap-3 md:max-w-lg">
+        <div className="pointer-events-none absolute inset-x-4 bottom-36 z-20 grid grid-cols-3 gap-2 sm:inset-x-8 sm:mx-auto sm:max-w-xl sm:gap-3 md:bottom-28 md:max-w-lg">
           {highlights.map((item) => (
             <article
               key={item.title}
