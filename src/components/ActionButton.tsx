@@ -10,7 +10,7 @@ export function ActionButton({
   variant = "primary",
 }: ActionButtonProps) {
   const baseStyles =
-    "inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold tracking-wide transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black/60";
+    "inline-flex w-full min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold tracking-wide transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black/60 sm:w-auto";
 
   const variantStyles =
     variant === "primary"

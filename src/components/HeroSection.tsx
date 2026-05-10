@@ -50,7 +50,7 @@ export function HeroSection() {
 
         </main>
 
-        <div className="pointer-events-none absolute inset-x-4 bottom-28 z-20 grid grid-cols-3 gap-2 sm:inset-x-8 sm:bottom-28 sm:gap-3">
+        <div className="pointer-events-none absolute inset-x-4 bottom-28 z-20 grid grid-cols-3 gap-2 sm:inset-x-8 sm:mx-auto sm:max-w-xl sm:gap-3 md:max-w-lg">
           {highlights.map((item) => (
             <article
               key={item.title}
@@ -66,7 +66,7 @@ export function HeroSection() {
 
         <div
           id="contact"
-          className="absolute inset-x-4 bottom-4 z-30 grid grid-cols-1 gap-3 sm:inset-x-8 sm:bottom-6 sm:grid-cols-2"
+          className="fixed inset-x-4 bottom-[calc(env(safe-area-inset-bottom)+0.75rem)] z-30 grid grid-cols-1 gap-3 sm:inset-x-8 sm:mx-auto sm:max-w-md sm:grid-cols-2 sm:bottom-6 md:max-w-lg"
         >
           <ActionButton label="WhatsApp Booking" href={WHATSAPP_LINK} />
           <ActionButton label="Call Now" href={CALL_LINK} variant="secondary" />
