@@ -17,3 +17,31 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+@keyframes greenShineSweep {
+  0%,
+  74% {
+    background-position: 220% 50%;
+  }
+  86%,
+  100% {
+    background-position: -220% 50%;
+  }
+}
+
+.text-shine-green {
+  background-image: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #ffffff 44%,
+    #25d366 50%,
+    #ffffff 56%,
+    #ffffff 100%
+  );
+  background-size: 240% 100%;
+  background-position: 220% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: greenShineSweep 6.6s linear infinite;
+}

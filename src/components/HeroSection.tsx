@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <section className="relative isolate h-[100svh] overflow-hidden text-white">
       <div
-        className="absolute inset-0 -z-20 bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-cover bg-center lg:bg-[position:72%_center]"
         style={{ backgroundImage: "url('/tennis.png')" }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#122131]/45 via-[#122131]/68 to-[#122131]/92" />
@@ -37,7 +37,7 @@ export function HeroSection() {
           <p className="mb-3 inline-flex rounded-full border border-white/25 bg-black/20 px-3 py-1 text-xs font-medium">
             Private Coach in UAE - Dubai
           </p>
-          <h1 className="text-3xl font-extrabold leading-tight sm:text-5xl">
+          <h1 className="text-[1.7rem] font-extrabold leading-tight tracking-tight text-shine-green sm:text-5xl sm:whitespace-nowrap">
             Elite Private Tennis Coach
           </h1>
           <p
@@ -54,10 +54,10 @@ export function HeroSection() {
           {highlights.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl border border-white/55 px-2 py-2 text-center text-white sm:px-3"
+              className="flex min-h-[94px] flex-col items-center justify-center rounded-2xl border border-white/55 px-3 py-3 text-center text-white sm:min-h-[104px] sm:px-4 sm:py-3"
             >
-              <h3 className="text-xs font-semibold sm:text-sm">{item.title}</h3>
-              <p className="mt-0.5 text-[10px] leading-snug text-white/90 sm:text-xs">
+              <h3 className="text-[0.95rem] font-semibold sm:text-lg">{item.title}</h3>
+              <p className="mt-1 text-[0.82rem] leading-snug text-white/90 sm:text-base">
                 {item.subtitle}
               </p>
             </article>
